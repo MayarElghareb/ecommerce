@@ -1,6 +1,7 @@
 
 import "./Counter.css"
 import MyCounter from "./Counter-wrapper";
+
 import { useState } from "react";
 
 function Counters (){
@@ -26,4 +27,9 @@ function Counters (){
         </div>
     )
 }
-    export default Counters ;
+function Header(props){
+    return(
+        <h2>{props.title}</h2>
+    )
+};  
+export {Counters, Header};
